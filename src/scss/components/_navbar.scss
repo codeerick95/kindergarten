@@ -1,0 +1,26 @@
+.navbar {
+    .logo {
+        max-width: 50px;
+    }
+
+    .nav-link {
+        opacity: .9;
+        border-bottom: 3px solid transparent; // Para que no se mueva hacia arriba al hacer hover
+        transition: border-bottom .15s;
+    
+        &:hover {
+            opacity: 1;
+            border-bottom: 3px solid $orange;
+        }
+    }
+}
+
+.navbar-mobile {
+    margin-top: 5rem;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        background-color: $blue;
+    }
+}

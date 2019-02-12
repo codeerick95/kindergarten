@@ -1,0 +1,15 @@
+Se requiere un sitio web para un nido con las siguientes secciones:
+    
+    -Barra de navegación: Mostrará un menú con los siguientes links:
+        - Inicio
+        - Sobre nosotros
+        - Servicios
+        - Instalaciones
+        - Galería
+        - Blog
+        - Contacto
+    -Páginas
+        Inicio
+            Portada: mostrará una portada con una pequeña descripción del sitio y un video o imagen.
+            About: mostrará una pequeña descripción del nido, con un botón para más información.
+            

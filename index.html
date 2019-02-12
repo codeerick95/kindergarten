@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Abc</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="public/css/bootstrap.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="public/css/app.css">
+</head>
+
+<body>
+    <div id="app" class="app">
+
+        <!-- Main menu -->
+        <nav id="navbar" class="navbar navbar-expand-md fixed-top pt-3">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="public/images/logo.png" alt="Logo Abc" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" @click="alertTest()" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="icon text-white" v-if="visible">
+                        <i class="far fa-window-close"></i>
+                    </div>
+                    <div class="icon text-white" v-else>
+                        <i class="fas fa-align-justify"></i>
+                    </div>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto text-center w-50 d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-white" href="#">
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-white" href="#">
+                                Nosotros
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-white" href="#">
+                                Servicios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-white" href="#">
+                                Galería
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-white" href="#">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-danger rounded-0">Contacto</a>
+                </div>
+            </div>
+        </nav>
+        <!-- End main menu -->
+
+        <!-- Menu mobile -->
+        <nav class="navbar navbar-mobile navbar-dark bg-primary w-50 position-fixed d-lg-none z-index-3" v-if="visible">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white text-uppercase" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-uppercase" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-uppercase" href="#">Servicios</a>
+                </li>
+                <li class="nav-item d-flex">
+                    <a class="nav-link text-white text-uppercase" href="#">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-uppercase" href="#">Blog</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- End menu mobile -->
+
+        <!-- Cover page -->
+        <div class="container-fluid cover-page p-0 z-index-1">
+            <div class="cover-page-content w-100 p-5">
+                <div class="container">
+                    <div class="row mt-5 animated fadeIn">
+                        <div
+                            class="my-md-5 col-md-12 col-lg-7 text-white d-flex flex-column text-center text-md-left rounded">
+                            <h2 class="h2 mt-5">La sonrisa de un niño es la esperanza de un futuro</h2>
+                            <div>
+                                <div class="d-inline-block">
+                                    <span class="circle circle-red animated fadeIn infinite delay-1s"></span>
+                                    <span class="circle circle-green animated fadeIn infinite delay-2s"></span>
+                                    <span class="circle circle-yellow animated fadeIn infinite delay-3s"></span>
+                                </div>
+                                <p class="my-3 lead d-inline-block">
+                                    Desde 2001, brindamos educación de alta calidad a niños pequeños.
+                                </p>
+                            </div>
+                            <div class="align-self-end pr-3 mb-md-12">
+                                <a href="#" class="btn btn-danger rounded-0">Programar visita</a>
+                                <img src="public/images/video-play.png" alt="Video play" class="icon">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-5 my-5">
+                            <video src="public/videos/welcome-video.mp4" poster="public/images/kindergarten.jpg"
+                                class="rounded mt-5"></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End cover page -->
+
+    </div>
+
+    <!-- Vue cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="public/js/app.js"></script>
+</body>
+
+</html>
