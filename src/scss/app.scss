@@ -1,6 +1,7 @@
 @import "variables";
 @import "components/navbar";
 @import "components/cover-page";
+@import "components/about";
 
 body {
     font-family: $font-global;
@@ -51,4 +52,8 @@ video {
 
 .circle-yellow {
     background-color: $yellow;
+}
+
+.text-yellow {
+    color: $yellow;
 }

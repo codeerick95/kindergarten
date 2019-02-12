@@ -23,8 +23,7 @@
   background-size: 600px 600px;
   background-attachment: fixed;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
-  margin-bottom: 1000px; }
+  clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%); }
   .cover-page .cover-page-content {
     background-color: rgba(64, 150, 201, 0.83); }
     .cover-page .cover-page-content .icon {
@@ -35,6 +34,20 @@
   @media (max-width: 576px) {
     .cover-page .h2 {
       font-size: 1.5em; } }
+
+.about {
+  margin-bottom: 500px; }
+  .about .content {
+    max-width: 80%;
+    margin: 0 auto; }
+  .about .background-pattern {
+    background-image: url("../../public/images/pattern.png");
+    background-attachment: fixed; }
+  .about .background-image {
+    background-image: url("../../public/images/programs/guarderia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .85; }
 
 body {
   font-family: "Raleway", sans-serif;
@@ -75,3 +88,6 @@ video {
 
 .circle-yellow {
   background-color: #FFDD57; }
+
+.text-yellow {
+  color: #FFDD57; }
