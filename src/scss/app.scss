@@ -2,6 +2,7 @@
 @import "components/navbar";
 @import "components/cover-page";
 @import "components/about";
+@import "components/features";
 
 body {
     font-family: $font-global;
@@ -11,6 +12,10 @@ body {
 .h2 {
     font-family: 'Major Mono Display', monospace;
     font-size: 2.3em;
+}
+
+.h3{
+    font-size: 1.2em;
 }
 
 .lead {
@@ -23,7 +28,7 @@ video {
 }
 
 .container-top {
-    margin-top: 6em;
+    margin-top: 10em;
 }
 
 .z-index-1 {

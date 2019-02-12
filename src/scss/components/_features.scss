@@ -1,0 +1,13 @@
+.features {
+    img {
+        max-width: 40%;
+    }
+    .col-md-4 {
+        &:hover {
+            img {
+                transition: transform 1s;
+                transform: rotate(360deg);
+            }
+        }
+    }
+}

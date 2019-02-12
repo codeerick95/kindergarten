@@ -35,19 +35,31 @@
     .cover-page .h2 {
       font-size: 1.5em; } }
 
-.about {
-  margin-bottom: 500px; }
-  .about .content {
-    max-width: 80%;
-    margin: 0 auto; }
-  .about .background-pattern {
-    background-image: url("../../public/images/pattern.png");
-    background-attachment: fixed; }
-  .about .background-image {
-    background-image: url("../../public/images/programs/guarderia.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: .85; }
+.about .content {
+  max-width: 80%; }
+
+.about .background-pattern {
+  background-image: url("../../public/images/pattern.png");
+  background-attachment: fixed; }
+
+.about .background-image {
+  background-image: url("../../public/images/programs/guarderia.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .85; }
+
+.features img {
+  max-width: 40%; }
+
+.features .col-md-4:hover img {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg); }
 
 body {
   font-family: "Raleway", sans-serif;
@@ -57,6 +69,9 @@ body {
   font-family: 'Major Mono Display', monospace;
   font-size: 2.3em; }
 
+.h3 {
+  font-size: 1.2em; }
+
 .lead {
   font-size: 1.1em; }
 
@@ -65,7 +80,7 @@ video {
   opacity: .85; }
 
 .container-top {
-  margin-top: 6em; }
+  margin-top: 10em; }
 
 .z-index-1 {
   position: relative;
