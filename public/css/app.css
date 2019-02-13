@@ -37,6 +37,10 @@
   @media (max-width: 576px) {
     .cover-page .h2 {
       font-size: 1.5em; } }
+  .cover-page .icon-player {
+    display: inline-block;
+    width: 50px;
+    cursor: pointer; }
 
 .about .content {
   max-width: 80%; }

@@ -83,8 +83,8 @@
                             </div>
                             <div class="align-self-end pr-3 mb-md-12">
                                 <a href="#" class="btn btn-danger rounded-0">Programar visita</a>
-                                <img src="public/images/play-button.svg" alt="Video play" class="icon" v-if="!videoStatus" @click="playOrPauseVideo()">
-                                <img src="public/images/pause-button.svg" alt="Video play" class="icon" v-if="videoStatus" @click="playOrPauseVideo()">
+                                <img src="public/images/play.png" alt="Video play" class="icon-player ml-3" v-if="!videoStatus" @click="playOrPauseVideo()">
+                                <img src="public/images/pause-button.svg" alt="Video play" class="icon-player ml-3" v-else @click="playOrPauseVideo()">
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-5 my-5">
