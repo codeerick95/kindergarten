@@ -1,11 +1,50 @@
+// Component points
+Vue.component('points', {
+    template: `
+        <span>
+            <span class="circle circle-red animated fadeIn infinite delay-1s"></span>
+            <span class="circle circle-green animated fadeIn infinite delay-2s"></span>
+            <span class="circle circle-yellow animated fadeIn infinite delay-3s"></span>
+        </span>
+    `,
+})
+
 const vm = new Vue({
     el: '#app',
     data: {
-        visible: false
+        menuMobile: false,
+        menuItems: [
+            {
+                text: 'Inicio',
+                url: 'index.html',
+                active: true
+            },
+            {
+                text: 'Nosotros',
+                url: 'index.html#nosotros',
+                active: false
+            },
+            {
+                text: 'Servicios',
+                url: 'index.html#programas',
+                active: false
+            },
+            {
+                text: 'Galería',
+                url: 'index.html#galeria',
+                active: false
+            },
+        ]
     },
     methods: {
-        alertTest() {
-            this.visible = !this.visible;
+        toggleMenuMobile() {
+            this.menuMobile = !this.menuMobile;
+        },
+        changeItemActive(item) {
+            this.menuItems.forEach(item => {
+                item.active = false;
+            });
+            item.active = true;
         }
     },
 });

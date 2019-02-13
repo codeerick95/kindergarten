@@ -11,6 +11,9 @@
     opacity: 1;
     border-bottom: 3px solid #FF5A5F; }
 
+.navbar .active {
+  border-bottom: 3px solid #FF5A5F; }
+
 .navbar-mobile {
   margin-top: 5rem; }
 
@@ -45,8 +48,7 @@
 .about .background-image {
   background-image: url("../../public/images/programs/guarderia.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  opacity: .85; }
+  background-repeat: no-repeat; }
 
 .features img {
   max-width: 40%; }
@@ -104,5 +106,9 @@ video {
 .circle-yellow {
   background-color: #FFDD57; }
 
-.text-yellow {
-  color: #FFDD57; }
+.opacity {
+  opacity: .85; }
+
+.shadow-card {
+  -webkit-box-shadow: 0px 2px 19px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 19px -9px rgba(0, 0, 0, 0.75); }

@@ -59,6 +59,10 @@ video {
     background-color: $yellow;
 }
 
-.text-yellow {
-    color: $yellow;
+.opacity {
+    opacity: .85;
+}
+
+.shadow-card {
+    box-shadow: 0px 2px 19px -9px rgba(0,0,0,0.75);
 }
