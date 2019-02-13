@@ -34,7 +34,8 @@ const vm = new Vue({
                 url: 'index.html#galeria',
                 active: false
             },
-        ]
+        ],
+        videoStatus: false
     },
     methods: {
         toggleMenuMobile() {
@@ -45,8 +46,20 @@ const vm = new Vue({
                 item.active = false;
             });
             item.active = true;
+        },
+        playOrPauseVideo() {
+            let video = document.getElementById('video');
+            if(!this.videoStatus) {
+                this.videoStatus = true;
+                video.play();
+                video.loop = true;
+            }
+            else {
+                this.videoStatus = false;
+                video.pause();
+            }
         }
-    },
+    }
 });
 
 // Controla el color de la barra de navegación
