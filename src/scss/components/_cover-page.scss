@@ -1,10 +1,13 @@
-.cover-page {
+.cover-page, .footer {
     background-image: url('../../public/images/background-cover-page.jpg');
     background-size: 600px 600px;
     background-attachment: fixed;
-    clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
+    
+    &.cover-page {
+        clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
+    }
 
-    .cover-page-content {
+    .cover-page-content, .footer-content {
         background-color: rgba(64, 150, 201, .83); // Capa azul por encima de la imagen de fondo
         
         .icon {

@@ -21,23 +21,24 @@
   .navbar {
     background-color: #209CEE; } }
 
-.cover-page {
+.cover-page, .footer {
   background-image: url("../../public/images/background-cover-page.jpg");
   background-size: 600px 600px;
-  background-attachment: fixed;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%); }
-  .cover-page .cover-page-content {
+  background-attachment: fixed; }
+  .cover-page.cover-page, .footer.cover-page {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%); }
+  .cover-page .cover-page-content, .cover-page .footer-content, .footer .cover-page-content, .footer .footer-content {
     background-color: rgba(64, 150, 201, 0.83); }
-    .cover-page .cover-page-content .icon {
+    .cover-page .cover-page-content .icon, .cover-page .footer-content .icon, .footer .cover-page-content .icon, .footer .footer-content .icon {
       width: 50px;
       cursor: pointer; }
-    .cover-page .cover-page-content .col-lg-7 {
+    .cover-page .cover-page-content .col-lg-7, .cover-page .footer-content .col-lg-7, .footer .cover-page-content .col-lg-7, .footer .footer-content .col-lg-7 {
       background-color: rgba(36, 40, 42, 0.03); }
   @media (max-width: 576px) {
-    .cover-page .h2 {
+    .cover-page .h2, .footer .h2 {
       font-size: 1.5em; } }
-  .cover-page .icon-player {
+  .cover-page .icon-player, .footer .icon-player {
     display: inline-block;
     width: 50px;
     cursor: pointer; }
@@ -67,6 +68,24 @@
   -ms-transform: rotate(360deg);
   transform: rotate(360deg); }
 
+.contact form .form-control {
+  border: 1px solid rgba(67, 68, 69, 0.2) !important; }
+  .contact form .form-control:focus {
+    border-color: rgba(67, 68, 69, 0.3) !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+
+.contact form textarea {
+  height: 80px;
+  resize: none; }
+
+.contact .icon {
+  font-size: 1.2em; }
+
+.contact .card {
+  -webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%); }
+
 body {
   font-family: "Raleway", sans-serif;
   color: #434445; }
@@ -79,7 +98,7 @@ body {
   font-size: 1.2em; }
 
 .lead {
-  font-size: 1.1em; }
+  font-size: 1em; }
 
 video {
   max-width: 100%;
@@ -116,3 +135,7 @@ video {
 .shadow-card {
   -webkit-box-shadow: 0px 2px 19px -9px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 19px -9px rgba(0, 0, 0, 0.75); }
+
+.btn {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important; }

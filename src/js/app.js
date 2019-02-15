@@ -21,17 +21,17 @@ const vm = new Vue({
             },
             {
                 text: 'Nosotros',
-                url: 'index.html#nosotros',
+                url: '#nosotros',
                 active: false
             },
             {
                 text: 'Servicios',
-                url: 'index.html#programas',
+                url: '#programas',
                 active: false
             },
             {
                 text: 'Galería',
-                url: 'index.html#galeria',
+                url: '#galeria',
                 active: false
             },
         ],

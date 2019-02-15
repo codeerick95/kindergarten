@@ -1,0 +1,24 @@
+.contact {
+    form {
+        .form-control {
+            border: 1px solid rgba(67, 68, 69, .2) !important;
+            &:focus {
+                border-color: rgba(67, 68, 69, .3) !important;
+                box-shadow: none !important; // Quita el estilo de bootstrap
+            }
+        }
+    
+        textarea {
+            height: 80px;
+            resize: none;
+        }
+    }
+
+    .icon {
+        font-size: 1.2em;
+    }
+
+    .card {
+        clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
+    }
+}
